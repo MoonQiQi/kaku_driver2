@@ -2,198 +2,91 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <include
         android:id="@+id/title_tuijianjiangli"
         layout="@layout/activity_titlebar" />
 
-    <ScrollView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none">
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuijianjiangli_banner" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="邀请好友注册卡库养车并上传行驶证"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_gravity="center_horizontal"
+            android:padding="0dp"
+            android:text="你得"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tuijianjiangli_xianjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuijianjiangli_money"
+            android:gravity="center"
+            android:text="¥5元"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/iv_tuijian_qrcode"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="现金"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/tv_tuijian_yaoqingma"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:text="您的邀请码："
-                    android:textColor="@color/color_word"
-                    android:textSize="15sp" />
+    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv_tuijian_wenhao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    android:drawablePadding="5dp"
-                    android:drawableRight="@drawable/wenhaoquan"
-                    android:text="奖励规则"
-                    android:textColor="@color/color_word"
-                    android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_tuijian_chenggong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:text="成功邀请1个好友注册，奖励100积分"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/iv_jiangli_pengyouquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/jiangli_pengyouquan" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    android:text="好友成为品牌会员，您将获得"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/iv_jiangli_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/jiangli_weixin" />
 
-                <TextView
-                    android:id="@+id/tv_tuijian_xianjin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:text="30元现金"
-                    android:textColor="@color/color_red"
-                    android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/iv_jiangli_erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/jiangli_erweima" />
 
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/yaoqingfangshi" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/iv_tuijian_weixin"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/weixinyaoqing" />
-
-                <ImageView
-                    android:id="@+id/iv_tuijian_duanxin"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/duanxinyaoqing" />
-
-            </LinearLayout>
-
-            <View
-                style="@style/Line_h"
-                android:layout_marginTop="15dp" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
-                    android:text="邀请奖励"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/tv_tuijian_total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="15dp"
-                    android:textColor="@color/color_red"
-                    android:textSize="15sp" />
-
-            </RelativeLayout>
-
-            <View style="@style/Line_h" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="推荐司机"
-                    android:textColor="#666666"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="积分奖励"
-                    android:textColor="#666666"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="现金奖励"
-                    android:textColor="#666666"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-            <View style="@style/Line_h" />
-
-            <ListView
-                android:id="@+id/lv_tuijian"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
 </LinearLayout>

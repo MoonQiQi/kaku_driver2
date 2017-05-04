@@ -9,13 +9,11 @@
         layout="@layout/activity_titlebar" />
 
     <RelativeLayout
-
         android:layout_width="297dp"
         android:layout_height="405dp"
         android:layout_below="@+id/include_titlebar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-
         android:background="@color/activity_bg_color">
 
         <RelativeLayout
@@ -26,14 +24,11 @@
 
             <ImageView
                 android:id="@+id/iv_scanhead"
-
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="34dp"
-
                 android:src="@drawable/icon_boy" />
 
             <TextView
@@ -59,9 +54,7 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
-
         </RelativeLayout>
-
 
         <ImageView
             android:id="@+id/iv_qrcode"
@@ -73,7 +66,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher" />
 
-
         <TextView
             android:id="@+id/tv_qrcode_msg"
             android:layout_width="wrap_content"
@@ -83,12 +75,10 @@
             android:layout_margin="14dp"
             android:gravity="center_horizontal"
             android:lines="2"
-            android:text="邀请好友扫描二维码注册成功\n即可奖励 50 积分"
+            android:text="邀请好友扫描二维码\n成功上传行驶证您即可获得5元现金"
             android:textColor="#999999"
             android:textSize="11sp" />
 
-
     </RelativeLayout>
-
 
 </RelativeLayout>

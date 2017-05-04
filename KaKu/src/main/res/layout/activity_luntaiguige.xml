@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_demo"
+        layout="@layout/activity_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="当前规格"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格1开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格2开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格3开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格4开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格5开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格6开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格7开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格8开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_luntaiguige9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="规格9开头"
+                android:textColor="@color/color_word"
+                android:textSize="12sp" />
+
+            <com.yichang.kaku.view.widget.MyListView
+                android:id="@+id/lv_luntaiguige9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

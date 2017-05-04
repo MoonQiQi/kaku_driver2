@@ -2,97 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <include
         android:id="@+id/include_titlebar"
         layout="@layout/activity_titlebar" />
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/img_rewards_rules" />
 
-        android:src="@drawable/img_rewards_rules"
-        />
-
-    <!--<Viewe
-        style="@style/Line_h"
-        android:layout_marginTop="15dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="1. 用户首次注册并登陆，奖励积分 100 积分；"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="2. 用户首次添加【我的爱车】，奖励积分 200 积分；"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-
-       &lt;!&ndash; <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="3、用户在“找货”中认证车辆，奖励积分2000分。"
-            android:textColor="#666666"
-            android:textSize="14sp" />&ndash;&gt;
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="3. 用户使用卡库养车【好礼共享】，邀请 1 名新用户并成功注册，奖励推荐人 50 积分；"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-
-       &lt;!&ndash; <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="5、完成保养订单后，用户可获得订单金额1%的等值奖励积分。"
-            android:textColor="#666666"
-            android:textSize="14sp" />&ndash;&gt;
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="4. 用户通过【我要吐槽】提出建议，奖励 50 积分；"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="15dp"
-            android:text="5. 用户的账户积分可用于车品商城现金抵扣。"
-            android:textColor="#666666"
-            android:textSize="14sp" />
-    </LinearLayout>-->
 </LinearLayout>
 

@@ -131,8 +131,8 @@
     <string name="unfinished">完成</string>
     <string name="camera_cancel">取消</string>
     <string name="no_photo">相册没有图片</string>
-    <string name="version_no1">V4.0.1</string>
-    <string name="version_no2">Android V4.0.1 build 20170104</string>
+    <string name="version_no1">V4.3.0</string>
+    <string name="version_no2">Android V4.3.0 build 20170428</string>
 
     <string name="update_info"> 1、XXX。\n2、XXX。\n3、XXX。</string>
 </resources>

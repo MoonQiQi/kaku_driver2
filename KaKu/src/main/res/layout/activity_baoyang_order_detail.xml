@@ -164,10 +164,47 @@
                     style="@style/Line_h"
                     android:layout_marginTop="15dp" />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_baoyangorderrdetail_fuwujishizi"
+                        style="@style/ConfirmOrderTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="服务技师：" />
+
+                    <TextView
+                        android:id="@+id/tv_baoyangorderrdetail_fuwujishi"
+                        style="@style/ConfirmOrderTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_baoyangorderrdetail_fuwujishizi"
+                        android:textColor="@color/color_blue"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_baoyangorderrdetail_workcall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dianhualan" />
+
+                </RelativeLayout>
+
+                <View style="@style/Line_h" />
+
                 <ListView
                     android:id="@+id/lv_baoyangdetail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" />
 
                 <TextView
                     android:id="@+id/tv_baoyangdetail_gong"

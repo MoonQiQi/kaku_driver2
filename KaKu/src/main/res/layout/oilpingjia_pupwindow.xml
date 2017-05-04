@@ -11,30 +11,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/iv_oilpup"
+        <RelativeLayout
+            android:id="@+id/rela_youhuipup_up"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/wuyyhq" />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/youhuipup_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youhuipup_up" />
+
+            <TextView
+                android:id="@+id/tv_youhuipup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_red"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
 
         <ImageView
-            android:id="@+id/iv_oilpup_yqhy50"
+            android:id="@+id/youhuipup_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/iv_oilpup"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/yqhy50" />
-
-        <ImageView
-            android:id="@+id/iv_oilpup_ggsc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/iv_oilpup_yqhy50"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/ggsc" />
+            android:layout_below="@+id/rela_youhuipup_up"
+            android:src="@drawable/youhuipup_down" />
 
     </RelativeLayout>
 

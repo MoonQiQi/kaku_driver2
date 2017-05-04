@@ -9,139 +9,21 @@
         android:id="@+id/titlebar_mycar"
         layout="@layout/activity_titlebar" />
 
-    <RelativeLayout
+    <ListView
+        android:id="@+id/lv_mycar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="10dp" />
 
-        <LinearLayout
-            android:id="@+id/line_mycar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bg_color"
-            android:orientation="vertical"
-            android:visibility="gone">
+    <ImageView
+        android:id="@+id/iv_mycar_nodata"
+        android:visibility="gone"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/zanwushuju" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/viewpager"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp" />
-
-                <LinearLayout
-                    android:id="@+id/line_mycar_brand"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="160dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/iv_mycar_line1"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:visibility="gone" />
-
-                    <ImageView
-                        android:id="@+id/iv_mycar_line2"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:visibility="gone" />
-
-                    <ImageView
-                        android:id="@+id/iv_mycar_line3"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:visibility="gone" />
-
-                    <ImageView
-                        android:id="@+id/iv_mycar_line4"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:visibility="gone" />
-
-                    <ImageView
-                        android:id="@+id/iv_mycar_line5"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:visibility="gone" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <View
-                style="@style/Line_h"
-                android:layout_marginTop="15dp" />
-
-            <RelativeLayout
-                android:id="@+id/rela_mycar_zuobaoyang"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="10dp">
-
-                <ImageView
-                    android:id="@+id/iv_mycar_zuobaoyang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="5dp"
-                    android:src="@drawable/aichezuobaoyang" />
-
-            </RelativeLayout>
-
-            <View style="@style/Line_h" />
-
-            <RelativeLayout
-                android:id="@+id/rela_mycar_tiechetie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white">
-
-                <ImageView
-                    android:id="@+id/iv_mycar_tiechetie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginLeft="5dp"
-                    android:padding="10dp"
-                    android:src="@drawable/aichetiechetie" />
-
-            </RelativeLayout>
-
-            <View style="@style/Line_h" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/iv_mycar_meiyouaiche"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/meiyouaiche"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/btn_mycar_add"
-            style="@style/Btn_Red"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
-            android:text="添加爱车" />
-
-    </RelativeLayout>
 
 </LinearLayout>

@@ -3,16 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    android:orientation="vertical"
-     >
+    android:orientation="vertical">
 
-    <include layout="@layout/activity_titlebar"
-        android:id="@+id/include_cangku" />
+    <include
+        android:id="@+id/include_cangku"
+        layout="@layout/activity_titlebar" />
 
-    <com.yichang.kaku.view.widget.XListView
-        android:id="@+id/lv_cangku"
-        android:dividerHeight="15dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+
+        <com.yichang.kaku.view.widget.XListView
+            android:id="@+id/lv_cangku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_cangku_wushuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zanwushuju"
+            android:visibility="gone" />
+
+    </RelativeLayout>
 
 </LinearLayout>

@@ -20,9 +20,9 @@
             android:id="@+id/iv_discovery_comment_head"
             android:layout_width="@dimen/x54"
             android:layout_height="@dimen/x54"
-            android:layout_gravity="center_vertical"
             android:layout_marginBottom="@dimen/x20"
             android:layout_marginTop="@dimen/x20"
+            android:scaleType="centerCrop"
             android:src="@drawable/icon_boy" />
 
         <TextView

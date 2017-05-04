@@ -76,6 +76,15 @@
             android:layout_height="wrap_content"
             android:visibility="invisible" />
 
+        <ImageView
+            android:id="@+id/iv_mendian_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/zanwushuju"
+            android:visibility="gone" />
+
         <RelativeLayout
             android:id="@+id/rela_shop_gv"
             android:layout_width="match_parent"

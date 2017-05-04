@@ -4,14 +4,13 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="horizontal"
-    android:paddingBottom="15dp"
-    android:paddingTop="15dp">
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
 
     <RelativeLayout
         android:id="@+id/rela_point_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp">
 
@@ -19,24 +18,19 @@
             android:id="@+id/tv_point_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
             android:layout_marginRight="15dp"
             android:maxLines="2"
-            android:text="注册成功"
             android:textColor="#000000"
-            android:textSize="17sp" />
-
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_point_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_point_title"
-            android:paddingBottom="0dp"
-            android:text="日期"
+            android:layout_marginTop="5dp"
             android:textColor="#999999"
-            android:textSize="16sp" />
-
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_point_num"
@@ -45,10 +39,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:text="+20"
             android:textColor="#00BC87"
-            android:textSize="21sp" />
-
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

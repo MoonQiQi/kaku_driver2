@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_demo"
+        layout="@layout/activity_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rela_paixingshizheng"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:text="请拍摄上传行驶证正副本"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_paixingshizheng_xingshizheng"
+                    android:layout_width="330dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/paixingshizheng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="请输入车牌号"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="#F1C701"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_paixingshizheng_carnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="3dp"
+                        android:drawableRight="@drawable/img_jiantou3"
+                        android:text="京"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_paixingshizheng_carnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_paixingshizheng_carnum"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="点击输入车牌"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_word"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_paixingshizheng_upload"
+                style="@style/Btn_Red"
+                android:layout_marginTop="30dp"
+                android:text="提交" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_addcar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightBlack"
+            android:visibility="gone">
+
+            <com.yichang.kaku.zhaohuo.LineGridView
+                android:id="@+id/gv_addcar_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#3B404C"
+                android:numColumns="8" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/line_addcar_jianpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lightBlack"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F1F1F1">
+
+                <ImageView
+                    android:id="@+id/iv_jianpan_xia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/jianpan_xia" />
+
+            </RelativeLayout>
+
+            <com.yichang.kaku.zhaohuo.LineGridView
+                android:id="@+id/gv_addcar_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3B404C"
+                android:numColumns="10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#43505F" />
+
+            <com.yichang.kaku.zhaohuo.LineGridView
+                android:id="@+id/gv_addcar_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3B404C"
+                android:numColumns="9" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3B404C">
+
+                <TextView
+                    android:id="@+id/tv_jianpan_wancheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/iv_jianpan_cha"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/iv_jianpan_cha"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_jianpan_cha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/jianpan_cha" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

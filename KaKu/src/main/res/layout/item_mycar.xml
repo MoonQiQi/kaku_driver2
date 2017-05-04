@@ -5,102 +5,58 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <View style="@style/Line_h" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="@color/white">
 
         <ImageView
-            android:id="@+id/iv_mycaritem_image"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_launcher" />
-
-        <!-- <ImageView
-             android:id="@+id/iv_mycaritem_icon"
-             android:layout_width="16dp"
-             android:layout_height="16dp"
-             android:layout_marginLeft="30dp"
-             android:layout_marginTop="15dp"
-             android:layout_toRightOf="@+id/iv_mycaritem_image" />-->
-        <LinearLayout
-            android:layout_width="0dp"
+            android:id="@+id/iv_mycaritem_icon"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="30dp" />
 
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_mycaritem_icon">
 
-
-            <com.yichang.kaku.view.KakuMultiLineTextView
-                android:id="@+id/tv_mycaritem_pinpai"
+            <TextView
+                android:id="@+id/tv_mycaritem_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="11dp"
-                android:layout_toRightOf="@+id/iv_mycaritem_image"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="1111"
+                android:text="AAA"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
-            <com.yichang.kaku.view.KakuMultiLineTextView
-                android:id="@+id/tv_mycaritem_qudong"
+            <TextView
+                android:id="@+id/tv_mycaritem_state"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/tv_mycaritem_pinpai"
-                android:layout_below="@+id/tv_mycaritem_pinpai"
-                android:layout_marginBottom="15dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="信息待完善"
-                android:textColor="@color/color_word"
-                android:textSize="14sp" />
-        </LinearLayout>
+                android:layout_below="@+id/tv_mycaritem_name"
+                android:text="AAA" />
 
+        </RelativeLayout>
 
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_caritem"
-        style="@style/Line_h"
-        android:layout_marginLeft="15dp" />
-
-    <RelativeLayout
-        android:id="@+id/rela_edit"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_below="@+id/view_caritem">
+        <ImageView
+            android:id="@+id/iv_mycaritem_jinqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/jinqu" />
 
         <ImageView
             android:id="@+id/iv_mycaritem_moren"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/sheweimoren_no" />
-
-        <ImageView
-            android:id="@+id/iv_mycaritem_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/iv_mycaritem_shanchu"
-            android:paddingRight="20dp"
-            android:src="@drawable/bianji" />
-
-        <ImageView
-            android:id="@+id/iv_mycaritem_shanchu"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:paddingRight="20dp"
-            android:src="@drawable/shanchu" />
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_mycaritem_jinqu"
+            android:src="@drawable/tjac_mr" />
 
     </RelativeLayout>
 

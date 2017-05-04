@@ -3,12 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/activity_bg_color"
-    android:orientation="vertical"><!-- android:background="@drawable/topbar_bg" -->
+    android:orientation="vertical">
 
     <include
         android:id="@+id/include_titlebar"
         layout="@layout/activity_titlebar" />
-
 
     <View
         style="@style/Line_h"
@@ -19,13 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/x88"
         android:layout_below="@+id/include_titlebar"
-
         android:background="@color/white"
         android:gravity="center_vertical"
         android:paddingRight="15dp">
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -42,7 +39,6 @@
             android:layout_centerVertical="true"
             android:background="@null"
             android:hint="名字"
-
             android:textColor="#666666"
             android:textSize="17sp"
             android:visibility="gone" />
@@ -61,16 +57,15 @@
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:background="@null"
+                android:cursorVisible="true"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:cursorVisible="true"
                 android:gravity="center|right"
                 android:hint="请输入名字"
-                android:textCursorDrawable="@drawable/cursor"
                 android:textColor="#999999"
+                android:textCursorDrawable="@drawable/cursor"
                 android:textSize="17sp" />
         </LinearLayout>
-
 
     </RelativeLayout>
 
@@ -81,9 +76,8 @@
 
         <View
             style="@style/Line_h"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="15dp" />
 
-            />
     </LinearLayout>
 
     <RelativeLayout
@@ -91,7 +85,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/x88"
         android:layout_below="@+id/rela_modifymename_name"
-
         android:background="@color/white"
         android:gravity="center_vertical"
         android:paddingRight="15dp">
@@ -131,20 +124,19 @@
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:background="@null"
+                android:cursorVisible="true"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:cursorVisible="true"
-                android:textCursorDrawable="@drawable/cursor"
                 android:gravity="center|right"
                 android:hint="请输入身份证号码"
                 android:maxLength="18"
+                android:inputType="number"
                 android:textColor="#999999"
+                android:textCursorDrawable="@drawable/cursor"
                 android:textSize="17sp" />
         </LinearLayout>
 
-
     </RelativeLayout>
-
 
     <View style="@style/Line_h" />
 </LinearLayout>

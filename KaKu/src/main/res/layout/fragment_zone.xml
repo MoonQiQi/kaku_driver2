@@ -32,52 +32,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:orientation="horizontal"
-                android:paddingBottom="15dp"
-                android:paddingTop="15dp">
-
-                <ImageView
-                    android:id="@+id/iv_faxian_mfdh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/faxian_icon_mfdh" />
-
-                <ImageView
-                    android:id="@+id/iv_faxian_czhy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/faxian_icon_czhy" />
-
-                <ImageView
-                    android:id="@+id/iv_faxian_gsgb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/faxian_icon_gsgb" />
-
-                <ImageView
-                    android:id="@+id/iv_faxian_jzb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/faxian_icon_jzb" />
-
-            </LinearLayout>
-
-            <View style="@style/Line_h" />
-
-            <View
-                style="@style/Line_h"
-                android:layout_marginTop="15dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:orientation="horizontal">
 
                 <ImageView

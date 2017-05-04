@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_demo"
+        layout="@layout/activity_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/scroll_huochangdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rela_huochangdetail_bottom"
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_huochangdetail_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/meidian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="180dp"
+                        android:background="#80333333">
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_shopname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_huochangdetail_xinxijiaoyibu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/xinxijiaoyibu2" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_addr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:ellipsize="end"
+                            android:maxLength="12"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_huochangdetail_daohang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/shopdingwei" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_h" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <RatingBar
+                            android:id="@+id/star_huochangdetail_star1"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="15dp"
+                            android:isIndicator="true"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_point1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/star_huochangdetail_star1"
+                            android:text="5.0"
+                            android:textColor="@color/color_red"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_chewei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="车位"
+                            android:textColor="@color/color_red"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_h" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@color/bg_color"></RelativeLayout>
+
+                    <View style="@style/Line_h" />
+
+                    <TextView
+                        android:id="@+id/tv_huochangdetail_pinglunnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/color_word"
+                        android:textSize="12sp" />
+
+                    <View style="@style/Line_h" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/iv_huochangdetail_pingjiaimage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_boy" />
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_pingjiaphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/iv_huochangdetail_pingjiaimage"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_pingjiatime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/color_word"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_h" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <RelativeLayout
+                            android:id="@+id/rela_huochangdetail_pingjia2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RatingBar
+                                android:id="@+id/star_huochangdetail_pingjia2"
+                                style="@style/roomRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:isIndicator="true" />
+
+                            <TextView
+                                android:id="@+id/tv_huochangdetail_star2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/star_huochangdetail_pingjia2"
+                                android:textColor="@color/color_red"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_huochangdetail_content2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rela_huochangdetail_pingjia2"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/color_word"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Line_h" />
+
+                    <RelativeLayout
+                        android:id="@+id/rela_huochangdetail_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="2dp"
+                            android:drawableRight="@drawable/jinqu"
+                            android:padding="10dp"
+                            android:text="查看全部评价"
+                            android:textColor="@color/color_word"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/Line_h"
+                        android:layout_marginBottom="10dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rela_huochangdetail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_huochangdetail_dianping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/woyaodianping" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -5,89 +5,35 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/iv_shopmall_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_shopmall_desc2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:padding="1dp">
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:lines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#333333"
+        android:textSize="13sp" />
 
-        <!-- <com.facebook.drawee.view.SimpleDraweeView
-             android:id="@+id/iv_shopmall_item_img"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_centerHorizontal="true"
-             fresco:placeholderImage="@drawable/logo" />-->
-
-        <ImageView
-            android:id="@+id/iv_shopmall_item_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/logo" />
-
-        <View
-            android:id="@+id/view_img"
-            style="@style/Line_h"
-            android:layout_below="@+id/iv_shopmall_item_img"
-            android:paddingBottom="5dp" />
-
-        <TextView
-            android:id="@+id/tv_shopmall_desc2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/view_img"
-            android:background="@color/white"
-            android:ellipsize="end"
-            android:lines="2"
-            android:maxEms="6"
-            android:maxLines="2"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:textColor="#333333"
-            android:textSize="14sp" />
-
-        <RelativeLayout
-            android:id="@+id/rela_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_shopmall_desc2"
-            android:background="@color/white"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:id="@+id/tv_rmb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/tv_price"
-                android:layout_alignParentLeft="true"
-                android:paddingBottom="0dp"
-                android:paddingLeft="5dp"
-                android:text="￥"
-                android:textColor="#D20000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tv_price2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/tv_rmb"
-                android:text="0.00"
-                android:textColor="#D20000"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/iv_shopmall_add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/gwc" />
-
-        </RelativeLayout>
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="积分"
+        android:textColor="@color/color_red"
+        android:textSize="14sp" />
 
 </LinearLayout>

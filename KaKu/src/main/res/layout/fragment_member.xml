@@ -118,117 +118,6 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/rela_member_carorder"
-                style="@style/MeRelaLayout">
-
-                <ImageView
-                    android:id="@+id/iv_member_carorder"
-                    style="@style/MeImageTitle"
-                    android:src="@drawable/member_order" />
-
-                <TextView
-                    android:id="@+id/tv_member_carorder"
-                    style="@style/MeText"
-                    android:layout_toRightOf="@+id/iv_member_carorder"
-                    android:text="车品订单" />
-
-                <TextView
-                    android:id="@+id/tv_member_showcarorders"
-                    style="@style/MeTextGray"
-                    android:layout_toLeftOf="@+id/iv_member_arrow_carorder"
-                    android:text="查看所有订单" />
-
-                <ImageView
-                    android:id="@+id/iv_member_arrow_carorder"
-                    style="@style/MeImageEntry" />
-
-            </RelativeLayout>
-
-            <View style="@style/Line_h" />
-
-            <LinearLayout
-                android:id="@+id/rela_member_carorder_item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:paddingLeft="18dp"
-                android:paddingRight="18dp"
-                android:paddingTop="5dp">
-
-                <LinearLayout
-                    android:id="@+id/ll_member_car_pay"
-                    style="@style/MeLinearOrderItem"
-                    android:layout_width="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/iv_member_car_pay"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/member_waiting_pay" />
-
-                    <TextView
-                        style="@style/MeOrderItemText"
-                        android:text="待付款" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll_member_car_receipt"
-                    style="@style/MeLinearOrderItem"
-                    android:layout_width="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/iv_member_car_receipt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/member_waiting_receipt" />
-
-                    <TextView
-                        style="@style/MeOrderItemText"
-                        android:text="待收货" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll_member_car_comment"
-                    style="@style/MeLinearOrderItem"
-                    android:layout_width="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/iv_member_car_comment"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/member_waiting_comment" />
-
-                    <TextView
-                        style="@style/MeOrderItemText"
-                        android:text="待评价" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll_member_car_exchange"
-                    style="@style/MeLinearOrderItem"
-                    android:layout_width="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/iv_member_car_exchange"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/member_exchange" />
-
-                    <TextView
-                        style="@style/MeOrderItemText"
-                        android:text="退/换货" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <View style="@style/Line_h" />
-
             <View
                 style="@style/Line_h"
                 android:layout_marginTop="15dp" />
@@ -365,11 +254,11 @@
                     android:src="@drawable/member1" />
 
                 <ImageView
-                    android:id="@+id/iv_member_2"
+                    android:id="@+id/iv_member_8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/member2" />
+                    android:src="@drawable/member8" />
 
                 <ImageView
                     android:id="@+id/iv_member_3"
@@ -457,11 +346,11 @@
                     android:src="@drawable/member7" />
 
                 <ImageView
-                    android:id="@+id/iv_member_8"
+                    android:id="@+id/iv_member_9"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/member8" />
+                    android:src="@drawable/member9" />
 
             </LinearLayout>
 
@@ -505,47 +394,6 @@
             </LinearLayout>
 
             <View style="@style/Line_h" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp">
-
-                <ImageView
-                    android:id="@+id/iv_member_9"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/member9" />
-
-                <ImageView
-                    android:id="@+id/iv_member_10"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/member9"
-                    android:visibility="invisible" />
-
-                <ImageView
-                    android:id="@+id/iv_member_11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/member9"
-                    android:visibility="invisible" />
-
-                <ImageView
-                    android:id="@+id/iv_member_12"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/member9"
-                    android:visibility="invisible" />
-
-            </LinearLayout>
 
         </LinearLayout>
 

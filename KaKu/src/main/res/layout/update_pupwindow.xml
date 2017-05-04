@@ -47,7 +47,7 @@
                 android:id="@+id/iv_update_faxian"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="80dp"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/update_faxian" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/iv_update_faxian"
                 android:layout_below="@+id/iv_update_faxian"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="80dp"
                 android:layout_marginTop="10dp"
                 android:lineSpacingMultiplier="1.2"
                 android:textColor="@color/black"

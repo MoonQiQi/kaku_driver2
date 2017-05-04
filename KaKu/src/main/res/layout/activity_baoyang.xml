@@ -25,51 +25,6 @@
                 android:background="@color/white">
 
                 <ImageView
-                    android:id="@+id/iv_baoyang_brand"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="15dp" />
-
-                <TextView
-                    android:id="@+id/tv_baoyang_brand"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_toRightOf="@+id/iv_baoyang_brand"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/tv_baoyang_xilie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/tv_baoyang_brand"
-                    android:layout_below="@+id/tv_baoyang_brand"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/color_word"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:id="@+id/iv_baoyang_huanche"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="15dp"
-                    android:src="@drawable/baoyang_huanche" />
-
-            </RelativeLayout>
-
-            <View style="@style/Line_h" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white">
-
-                <ImageView
                     android:id="@+id/iv_baoyang_oil"
                     android:layout_width="60dp"
                     android:layout_height="60dp"

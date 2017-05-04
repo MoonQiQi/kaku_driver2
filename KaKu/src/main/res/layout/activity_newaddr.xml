@@ -59,7 +59,9 @@
                     android:layout_toLeftOf="@+id/iv_newaddr_jinqu1"
                     android:layout_toRightOf="@+id/tv_newaddrname"
                     android:gravity="right"
+                    android:hint="请输入姓名"
                     android:textColor="@color/color_word"
+                    android:textColorHint="@color/color_word"
                     android:textSize="17sp" />
 
             </RelativeLayout>
@@ -101,7 +103,9 @@
                     android:layout_toLeftOf="@+id/iv_newaddr_jinqu2"
                     android:layout_toRightOf="@+id/tv_newaddrphone"
                     android:gravity="right"
+                    android:hint="请输入联系方式"
                     android:textColor="@color/color_word"
+                    android:textColorHint="@color/color_word"
                     android:textSize="17sp" />
 
             </RelativeLayout>
@@ -140,7 +144,9 @@
                     android:layout_toLeftOf="@+id/iv_newaddr_jinqu3"
                     android:layout_toRightOf="@+id/tv_newaddrarea"
                     android:gravity="right"
+                    android:hint="请选择所在区域"
                     android:textColor="@color/color_word"
+                    android:textColorHint="@color/color_word"
                     android:textSize="17sp" />
 
             </RelativeLayout>
@@ -183,7 +189,9 @@
                     android:layout_toLeftOf="@+id/iv_newaddr_jinqu4"
                     android:layout_toRightOf="@+id/tv_newaddrdizhi"
                     android:gravity="right"
+                    android:hint="请输入详细地址"
                     android:textColor="@color/color_word"
+                    android:textColorHint="@color/color_word"
                     android:textSize="17sp" />
 
             </RelativeLayout>
@@ -193,7 +201,7 @@
             <Button
                 android:id="@+id/btn_addr_save"
                 style="@style/Btn_Red"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="120dp"
                 android:text="保存" />
 
         </LinearLayout>

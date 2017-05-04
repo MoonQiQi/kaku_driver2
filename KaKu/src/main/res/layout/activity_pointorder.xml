@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_demo"
+        layout="@layout/activity_titlebar" />
+
+    <com.yichang.kaku.view.widget.XListView
+        android:id="@+id/lv_pointorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="15dp" />
+
+    <ImageView
+        android:id="@+id/iv_pointorder_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/zanwushuju"
+        android:visibility="gone" />
+
+</LinearLayout>
